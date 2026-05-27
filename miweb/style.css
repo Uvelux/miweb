@@ -54,6 +54,26 @@ input[type="submit"]:hover {
   background: #357ab7;
 }
 
+.hero {
+  background: linear-gradient(135deg, #4a90e2 0%, #50c6f2 100%);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 680px;
+}
+
 .card {
   background: white;
   border: 1px solid #ddd;
@@ -61,4 +81,10 @@ input[type="submit"]:hover {
   padding: 18px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   margin-bottom: 20px;
+}
+
+.feature-list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
